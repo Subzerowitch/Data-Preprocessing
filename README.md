@@ -27,14 +27,23 @@
 
 **Handling Missing Values:**
 
+
 -Several columns with missing values were processed and filled appropriately:
+
 -Filled missing 'Street Number Suffix' data using 'Street Number'.
+
 -Columns with more than 85% of data missing were dropped, including 'Unit', 'Unit Suffix', 'Voluntary Soft-Story Retrofit', and 'TIDF Compliance'.
+
 -Missing data in 'Site Permit' was assumed to be 'N' (no permit).
+
 -Missing data in 'Issued Date' was filled using 'Filed Date'.
+
 -Missing data in 'Completed Date' was filled using 'Issued Date' where the 'First Construction Document Date' matched 'Issued Date'.
+
 -'First Construction Document Date' missing values were filled by adding the average difference between this date and 'Issued Date'.
+
 -'Structural Notification' missing values were assumed to be 'N' (no notification).
+
 -Remaining missing values in 'Permit Expiration Date' were replaced with NaT.
 
 **Data Type Conversions:**
